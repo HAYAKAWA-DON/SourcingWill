@@ -1,0 +1,61 @@
+.Products_Title{
+    background-color: #f8f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Products_Title h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.Products_Title p{
+    width: 100%;
+    max-width: 1000px;
+    color: #8a8989;
+}
+.Products_Content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 70px;
+    background-color: #f8f9f9;
+}
+/*Set内元素设置*/
+.Products_Content_Set{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0; /* 隐藏元素 */
+    transform: translateY(50px); /* 初始位置偏移 */
+    transition: all 0.5s linear;
+}
+
+.Products_Content_Set.visible {
+    opacity: 1; /* 显示元素 */
+    transform: translateY(0); /* 恢复到原始位置 */
+}
+
+.Products_Content_Set img{
+    width: 280px;
+    height: 175px;
+}
+.Products_Content_Set img:hover{
+    opacity: 0.8;
+}
+.Products_Content_Set a{
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.Products_Content_Set a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.Products_Content_UnderLine{
+    border:1px solid #afaeae;
+    width: 30%;
+}

@@ -1,0 +1,46 @@
+/*全局默认格式重置*/
+html, body {
+    margin: 0; /* 移除全局默认外边距 */
+    padding: 0;
+    line-height: 1.6;
+}
+
+/*全局选中颜色*/
+.nav_left_icon a img::selection,
+.nav_right a::selection {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+/*导航栏设置*/
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    box-shadow: 5px 0 10px 3px #777676;
+    z-index: 100;
+}
+.nav_right{
+    display: flex;
+    height: 100%;
+}
+.nav_right a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav_right a:hover {
+    color: #03c4eb;
+}
+
+

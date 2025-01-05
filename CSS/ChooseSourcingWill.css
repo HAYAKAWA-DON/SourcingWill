@@ -1,0 +1,63 @@
+.Short_Introduction_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.Short_Introduction_2 h2{
+    font-size: 35px;
+    padding: 40px 0 0 0;
+    letter-spacing: 2px;
+}
+.Short_Introduction_2 p{
+    font-size: 18px;
+    color: #8a8989;
+    width: 75%;
+}
+
+/*分项目介绍*/
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #03c4eb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+.circle:hover {
+    background-color: #333333;
+}
+.Short_Introduction_2_Content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    gap: 30px;
+    opacity: 0; /* 隐藏元素 */
+    transform: translateY(150px); /* 初始位置偏移 */
+    transition: all 0.5s linear;
+}
+.Short_Introduction_2_Content.visible {
+    opacity: 1; /* 显示元素 */
+    transform: translateY(0); /* 恢复到原始位置 */
+}{}
+.Short_Introduction_2_Content_Text{
+    width: 600px;
+}
+.Short_Introduction_2_Content_Text h4{
+    text-align: center;
+}
+.Short_Introduction_2_Content_Text p{
+    color: #8a8989;
+}
+.Short_Introduction_2_Content_Text:hover{
+    .circle{
+        background-color: #333333;
+    }
+}

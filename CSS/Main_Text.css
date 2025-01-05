@@ -1,0 +1,209 @@
+/*初始化网页默认排版*/
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/*简短介绍*/
+.brief_introduction{
+    padding-top: 100px;
+    width: 100%;
+    background-image: url('../Images/laptop_work.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brief_introduction_text p{
+    font-size: 25px;
+    color: white;
+    font-weight: 200;
+    width: 100%;
+    max-width: 1100px;
+    font-style: italic;
+    text-align: center;
+}
+.brief_introduction_text h1{
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 1px;
+    color: white;
+}
+/*简短介绍里面的按钮*/
+.brief_introduction_button{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0 100px 0;
+}
+.brief_introduction_button1{
+    height: 50px;
+    padding: 10px 25px;
+    background-color: #03c4eb;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+}
+.brief_introduction_button1:hover{
+    background-color: #4fd6f1;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /*给响应式元素提供切换时间。*/
+
+}
+.brief_introduction_button1:active{
+    background-color: #0289a5;
+}
+.brief_introduction_button2{
+    height: 50px;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    border: 1px white solid;
+    font-size: 16px;
+}
+.brief_introduction_button2:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /*给响应式元素提供切换时间。*/
+}
+
+/*动态数字栏*/
+.dynamic_number_introduction h1{
+    padding: 50px 0 30px 0;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.dynamic_number_text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 110px;
+    color: gray;
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+.dynamic_number_introduction_Factors{
+    text-align: center;
+}
+.dynamic_number{
+    text-align: center;
+    color: #03c4eb;
+    font-size: 50px;
+}
+
+/*Reliable Sourcing Agent*/
+.Short_Introduction_1{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Short_Introduction_1 h2{
+    font-size: 35px;
+}
+.Short_Introduction_1 p{
+    font-size: 18px;
+    color: #8a8989;
+    width: 75%;
+}
+.Short_Introduction_1_Company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.Short_Introduction_1_Company img{
+    width: 200px;
+    height: 110px;
+}
+.Short_Introduction_1_Company a{
+    text-decoration: none;
+    color: #03c4eb;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.Short_Introduction_1_Company a:hover{
+    text-decoration: underline;
+    color: #8a8989;
+}
+
+/*GET STARTED NOW LINK*/
+.Sourcing_Button_Content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #222222;
+    color: white;
+    flex-wrap: wrap;
+}
+.Sourcing_Button_Content h2{
+    width: 800px;
+}
+.Sourcing_Button_Content a{
+    display: flex;
+    text-decoration: none;
+    height: 40px;
+    width: 180px;
+    background-color: #222222;
+    color: #03c4eb;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid #03c4eb;
+}
+.Sourcing_Button_Content a:hover{
+    background-color: #03c4eb;
+    color: white;
+}
+
+/*BackToTop_Button*/
+.Footer_Content{
+    color: #e1dfdf;
+    display: block;
+    text-align: center;
+    background-color: #222222;
+    padding: 0 0 20px 0;
+}
+.Footer_Content_Btn{
+    display: flex;
+    justify-content: end;
+}
+.Back_To_The_Top{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    transform: rotate(45deg);
+    margin: -35px 80px 0 0;
+}
+.Back_To_The_Top:hover{
+    color: #03c4eb;
+    cursor: pointer;
+}
+.Back_To_The_Top span{
+    margin: 10px 0 0 10px;
+    display: flex;
+    transform: rotate(-45deg);
+}

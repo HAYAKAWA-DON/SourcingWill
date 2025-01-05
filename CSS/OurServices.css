@@ -1,0 +1,56 @@
+.Our_Services_Introduction_Title{
+    display: block;
+    background-color: #f8f9f9;
+    /*height: 100px;*/
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: #333333;
+}
+.Our_Services_Introduction{
+    display: flex;
+    background-color: #f8f9f9;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+.Our_Services_Introduction_Section{
+    width: 540px;
+    height: auto;
+    background-color: white;
+    text-decoration: none;
+    opacity: 0; /* 隐藏元素 */
+    transform: translateY(50px); /* 初始位置偏移 */
+    transition: all 0.5s linear;
+}
+
+.Our_Services_Introduction_Section.visible {
+    opacity: 1; /* 显示元素 */
+    transform: translateY(0); /* 恢复到原始位置 */
+}
+
+.Our_Services_Introduction_Section:hover{
+    box-shadow: 0 8px 20px -8px #8e8c8c;
+}
+.Our_Services_Introduction_Content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 30px;
+}
+.Our_Services_Introduction_Content img{
+    width: 78px;
+    height: 60px;
+    align-self: center;
+}
+.Our_Services_Introduction_Content h4{
+    color: black;
+}
+.Our_Services_Introduction_Content p{
+    color: #8a8989;
+    font-size: 14px;
+}

@@ -1,0 +1,41 @@
+/*底部介绍栏目*/
+.Bottom_Content{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.Products_Content_Sec_Father{
+    width: 90%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+.Bottom_Content_Sec h4 {
+    margin-bottom: 10px;
+    color: white;
+    letter-spacing: 2px;
+}
+.Bottom_Content_Sec{
+    margin: 0 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.Bottom_Content_Sec a{
+    text-decoration: none;
+    color: #8a8989;
+    font-size: 0.9em;
+}
+.Bottom_Content_Sec a:hover{
+    text-decoration: underline;
+    color: #03c4eb;
+}
+.Bottom_Content_Sec p{
+    color: #e1dfdf;
+    font-size: 0.9em;
+    margin: 0;
+}

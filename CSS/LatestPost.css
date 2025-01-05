@@ -1,0 +1,73 @@
+.an-underline{
+    width: 1000px;
+    height: 0; /* 高度设为 0 */
+    border-bottom: 1px solid #a5a4a4;
+}
+.LatestPost_Title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LatestPost_Title h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.LatestPost_Title p{
+    width: 100%;
+    max-width: 1000px;
+    color: #8a8989;
+}
+
+.LatestPost_Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Products_Content_Sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    gap: 20px;
+    margin: 15px 0;
+    opacity: 0; /* 隐藏元素 */
+    transform: translateY(50px); /* 初始位置偏移 */
+    transition: all 0.5s linear;
+}
+.Products_Content_Sec.visible {
+    opacity: 1; /* 显示元素 */
+    transform: translateY(0); /* 恢复到原始位置 */
+}
+
+.Products_Content_Sec_Left:hover{
+    opacity: 0.8;
+}
+.Products_Content_Sec_Right{
+    display: flex;
+    flex-direction: column;
+}
+.Products_Content_Sec_Right_GUIDELINES{
+    color: #03c4eb;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Products_Content_Sec_Right_GUIDELINES:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.Products_Content_Sec_Right_TITLE{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.Products_Content_Sec_Right_TITLE:hover{
+    color: gray;
+}
+.Products_Content_Sec_Right p{
+    color: #8a8989;
+    margin-top: 5px;
+}
